@@ -1,0 +1,3 @@
+{
+  "python.analysis.extraPaths": ["./python_work/PPZ/Módulos"]
+}
