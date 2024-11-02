@@ -60,6 +60,7 @@ def gerenciar_compras(compras, nome_arquivo=None): # Menu intermediário........
 def main():     # Menu principal........... compras entrou no if de escolha.......
 
     while True:
+        os.system('cls' if os.name == 'nt' else 'clear')
         print('1. Criar uma nova lista de compras')
         print('2. Carregar uma lista existente')
         print('3. Sair')
