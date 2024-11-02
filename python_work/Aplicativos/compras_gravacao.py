@@ -1,4 +1,5 @@
 import json
+import os
 import time
 
 def adicionar_item(compras, item, quantidade):
@@ -75,6 +76,6 @@ def main():     # Menu principal........... compras entrou no if de escolha.....
              time.sleep(1)
 if __name__ == '__main__':
     main()2
-    
+
 
 
