@@ -75,6 +75,16 @@ def main():     # Menu principal........... compras entrou no if de escolha.....
             if not arquivos:
                  print('Nenhuma lista econtrada')
             time.sleep(3)
+            continue
+        for i, arquivo in enumerate(arquivos, 1):
+         print(f'{i} {arquivo}')
+        escolha = int(input('Escolha uma lista para carregar (0 se nehuma):'))
+        if escolha == 0:
+             continue
+        if  escolha < 0 or escolha > len(arquivos):
+            print('Opção inválida!')
+            time.sleep(2)
+
         elif escolha == '3':
             break
         else:
