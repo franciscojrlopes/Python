@@ -25,6 +25,7 @@ def carregar_compras(compras, nome_do_arquivo):
 
 def gerenciar_compras(compras, nome_arquivo=None): # Menu intermediário........... recebe compras.........
     while True:
+         os.system('cls' if os.name == 'nt' else 'clear')
          print('1 Adicionar item')
          print("2 Remover item")
          print("3 Visualizar lista")
@@ -76,7 +77,8 @@ def main():     # Menu principal........... compras entrou no if de escolha.....
              print('Opção inválida!')
              time.sleep(1)
 if __name__ == '__main__':
-    main()2
+     main()
+
 
 
 
