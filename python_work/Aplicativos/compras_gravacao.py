@@ -71,7 +71,10 @@ def main():     # Menu principal........... compras entrou no if de escolha.....
             gerenciar_compras(compras)
         elif escolha == '2':
             print('Listas disponíveis: ')
-            arquivos= [arquivo for arquivo in os.listdir() if arquivo.endswith('.json') ]
+            arquivos= [arquivo for arquivo in os.listdir() if arquivo.endswith('.json')]
+            if not arquivos:
+                 print('Nenhuma lista econtrada')
+            time.sleep(3)
         elif escolha == '3':
             break
         else:
@@ -79,6 +82,7 @@ def main():     # Menu principal........... compras entrou no if de escolha.....
              time.sleep(1)
 if __name__ == '__main__':
      main()
+
 
 
 
