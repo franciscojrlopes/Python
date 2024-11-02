@@ -74,7 +74,7 @@ def main():     # Menu principal........... compras entrou no if de escolha.....
              print('Opção inválida!')
              time.sleep(1)
 if __name__ == '__main__':
-    main()
-
-
+    main()2
     
+
+
