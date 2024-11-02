@@ -1,5 +1,5 @@
 import json
-import os
+import os # Biblioteca OS ver na rede.......
 import time
 
 def adicionar_item(compras, item, quantidade):
@@ -70,7 +70,8 @@ def main():     # Menu principal........... compras entrou no if de escolha.....
             compras = {}
             gerenciar_compras(compras)
         elif escolha == '2':
-            pass
+            print('Listas disponíveis: ')
+            arquivos= [arquivo for arquivo in os.listdir() if arquivo.endswith('.json') ]
         elif escolha == '3':
             break
         else:
