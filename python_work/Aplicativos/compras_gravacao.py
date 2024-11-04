@@ -84,6 +84,12 @@ def main():     # Menu principal........... compras entrou no if de escolha.....
         if  escolha < 0 or escolha > len(arquivos):
             print('Opção inválida!')
             time.sleep(2)
+          #   nome_arquivo = arquivos[escolha - 1]
+          #   compras = carregar_compras(nome_arquivo)
+          #   compras = carregar_compras(compras, arquivos) outra opção....
+            compras = carregar_compras (arquivos [escolha -1])
+            gerenciar_compras(compras, arquivos[escolha -1])
+
 
         elif escolha == '3':
             break
